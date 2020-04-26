@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Card} from './card.component';
 import styled from 'styled-components';
+import UserProfile from './component/UserProfile.component';
 
 
 const Text = styled.div`
@@ -16,12 +17,10 @@ const textStyles ={
 }
 //      <div style={textStyles }>I am a component</div>
 function App() {
+
   return (
     <div className="App">
-      <Card>
-  
-        <Text isActive ={false}>I am another component</Text>
-      </Card>
+      <UserProfile name='lena' email='ddd@gamil.com'/>
     </div>
   );
 }
